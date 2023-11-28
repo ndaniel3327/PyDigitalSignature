@@ -9,6 +9,4 @@ with open('31signed.pdf', 'rb') as inf:
     fields.append_signature_field(w,sig_field_spec=fields.SigFieldSpec('Signature1'))
     fields.append_signature_field(w,sig_field_spec=fields.SigFieldSpec('Signature2'))
     fields.append_signature_field(w,sig_field_spec=fields.SigFieldSpec('Signature3'))
-
-with open('32signed.pdf', 'wb') as outf:
-        pdf_signer.sign_pdf(w, output=outf)
+    
